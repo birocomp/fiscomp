@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from numba import jit, cuda
+from numba import jit
 import numpy as np
 import matplotlib.animation as animation
 import gvars,pot
@@ -41,7 +41,7 @@ def timeprop(u,pmax):
 	print("Time evolution started...")
 	if pmax!=0:
 		if nmax%pmax==0:
-			pnmax=np.int(nmax/pmax)
+			pnmax=np.int32(nmax/pmax)
 		else:
 			pnmax=nmax
 	for n in range(0,nmax):	#Time loop from t=0 to t=(nmax-1)*dt'
@@ -101,7 +101,7 @@ def plot(U,V,autolim,ov_UV,alpha,pngV,gif,mp4,Ucmap,
 		im3 = plt.imshow(V[1:nx,1:ny], cmap=Vcmap, extent=ex)
 		cb1 = fig.colorbar(im3, ax=ax3)
 		imV = plt.gcf()		
-		imV.savefig('2Dpot.png', dpi=dpi)
+		imV.savefig('pot.png', dpi=dpi)
 		
 def animate(i,im1,autolim):#render frame i+1 from frame 1 to nf	
 	Un=U[1:nx,1:ny,i]
