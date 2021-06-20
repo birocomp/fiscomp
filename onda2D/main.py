@@ -12,7 +12,7 @@ nx,ny,dt,dx,nmax,nf,v,e,dx2,nt,x,y,X,Y,fr,t,tfr,V,u,ut,ut1,U=gvars.init()
 def main():
 	global U,nt,V,u,ut
 	
-	V=pot.oneslit(C=(-200.0,0),WW=15.0,SH=150.0,SS=10.0,horizontal=False)
+	V=pot.oneslit(C=(-200.0,0),WW=15.0,SH=150.0,horizontal=False)
 	u=u0(u)
 	ut=ut0(ut)
 	
@@ -93,7 +93,7 @@ def plot(U,V,autolim,ov_UV,alpha,pngV,gif,mp4,Ucmap,
 	
 	if gif==True:
 		print("Rendering GIF frames...")
-		wav.save('biwav.gif', writer = 'imagemagick', dpi=dpi, fps=fps)
+		wav.save('2Dwav.gif', writer = 'imagemagick', dpi=dpi, fps=fps)
 		print("GIF saved")
 	
 	if pngV==True:
@@ -101,7 +101,7 @@ def plot(U,V,autolim,ov_UV,alpha,pngV,gif,mp4,Ucmap,
 		im3 = plt.imshow(V[1:nx,1:ny], cmap=Vcmap, extent=ex)
 		cb1 = fig.colorbar(im3, ax=ax3)
 		imV = plt.gcf()		
-		imV.savefig('bipot.png', dpi=dpi)
+		imV.savefig('2Dpot.png', dpi=dpi)
 		
 def animate(i,im1,autolim):#render frame i+1 from frame 1 to nf	
 	Un=U[1:nx,1:ny,i]
