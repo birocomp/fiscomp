@@ -1,4 +1,4 @@
-jupyter contrib nbextension install --user
-jupyter nbextension enable --py widgetsnbextension
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
-jupyter labextension install @jupyter-widgets/jupyterlab-manager v3.0.0
+jupyter lab clean
+
+# Setup a workspace
+jupyter lab workspaces import main.jupyterlab-workspace
