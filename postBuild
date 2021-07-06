@@ -1,4 +1,0 @@
-jupyter lab clean
-
-# Setup a workspace
-jupyter lab workspaces import main.jupyterlab-workspace
