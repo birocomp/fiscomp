@@ -5,14 +5,11 @@ dependencies:
   - conda
   - python=3.9
   - jupyterlab
-  - jupyterlab-git
   - nodejs
   - ipywidgets
   - matplotlib
   - jupyter_nbextensions_configurator
   - jupyter_contrib_nbextensions
   - pip
-  - toc
-  - jupyter-manager
   - scipy
 prefix: /home/jovaine/miniconda3
