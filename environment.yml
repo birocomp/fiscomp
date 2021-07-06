@@ -2,11 +2,13 @@ name: base
 channels:
   - defaults
 dependencies:
-  - conda
+  - numba
   - python=3.9
   - nodejs
   - ipywidgets
   - matplotlib
+  - jupyter_nbextensions_configurator
+  - jupyter_contrib_nbextensions
   - pip
   - scipy
 prefix: /home/jovaine/miniconda3
