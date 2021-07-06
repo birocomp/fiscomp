@@ -1,0 +1,9 @@
+matplotlib==3.4.2
+numba==0.53.1
+numpy==1.20.3
+scipy
+nbconvert
+nbformat
+ipywidgets
+jupyter_nbextensions_configurator
+jupyter_contrib_nbextensions
