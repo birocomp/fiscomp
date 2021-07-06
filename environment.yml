@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - conda
+  - numba
   - python=3.9
   - jupyterlab
   - nodejs
