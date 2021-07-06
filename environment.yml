@@ -12,7 +12,5 @@ dependencies:
   - jupyter_nbextensions_configurator
   - jupyter_contrib_nbextensions
   - pip
-  - spyder==5.0.3
-  - spyder-notebook
   - scipy
 prefix: /home/jovaine/miniconda3
