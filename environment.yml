@@ -1,0 +1,19 @@
+name: base
+channels:
+  - defaults
+dependencies:
+  - conda
+  - python=3.9
+  - jupyterlab
+  - jupyterlab-git
+  - nodejs
+  - ipywidgets
+  - matplotlib
+  - jupyter_nbextensions_configurator
+  - jupyter_contrib_nbextensions
+  - pip
+  - spyder==5.0.3
+  - rise
+  - spyder-notebook
+  - scipy
+prefix: /home/jovaine/miniconda3
