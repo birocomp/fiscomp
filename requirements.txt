@@ -8,3 +8,4 @@ ipywidgets==7.6.3
 jupyter_nbextensions_configurator==0.4.1
 jupyter_contrib_nbextensions==0.5.1
 appmode==0.8.0
+ipympl==0.7.0
